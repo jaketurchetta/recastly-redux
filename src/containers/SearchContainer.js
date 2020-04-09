@@ -13,8 +13,14 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
+const mapStateToProps = (state) => {
+  return {
+    value: state.value
+  };
+};
+
 var SearchContainer = connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Search);
 

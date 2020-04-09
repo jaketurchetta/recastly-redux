@@ -4,7 +4,7 @@ import changeVideo from './../actions/currentVideo.js';
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleVideoListEntryTitleClick: (video) => { dispatch(changeVideo(video)); }
+    handleVideoListEntryTitleClick: (video) => dispatch(changeVideo(video))
   };
 };
 

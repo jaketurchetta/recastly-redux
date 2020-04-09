@@ -12,6 +12,7 @@ var handleVideoSearch = (q) => {
 
   return (dispatch) => {
     searchYouTube(searchObj, (videos) => {
+      dispatch(changeVideo(videos[0]));
       dispatch(changeVideoList(videos));
     });
   };
